@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <script>
+            
+            for(var a=0; a<=10; a++)
+            {
+                document.write("a: " + a + "<br>");
+            }
+            
+            document.write("<br><br>");
+            
+            for(var a=5; a>=1; a--)
+            {
+                document.write("a: " + a + "<br>");
+            }
+            
+            document.write("<br><br>");
+            
+            for(var a=0; a<=20; a=a+2)
+            {
+                document.write("a: " + a + "<br>");
+            }
+            
+            var minhaLista = new Array("André", "Carlos", "Tarcísio");
+            for(nome in minhaLista)
+            {
+                // document.write("Bom dia " + nome + "<br>");
+                document.write("Bom dia " + minhaLista[nome] + "<br>");
+            }
+            
+            var i = 1;
+            while(i <= 7)
+            {
+                document.write("i: " + i + "<br>");
+                i++;
+            }
+            
+            document.write("<br><br>");
+            
+            i = 100;
+            do
+            {
+                document.write("i: " + i + "<br>");
+                i++;
+            } while(i <= 150);
+            
+            document.write("<br><br>");
+            
+            for(var x=0; x<=10; x++)
+            {
+                if(x == 5)
+                {
+                    // break;
+                    continue;
+                }
+                
+                document.write("x: " + x + "<br>");
+            }
+            
+            document.write("Chegou no final do código.");
+            document.write("<br><br>");
+            
+            var naipes = new Array("Copas", "Paus", "Ouro", "Espadas");
+            
+            for(naipeIndiceNumerico in naipes)
+            {
+                for(x=1; x<=13; x++)
+                {
+                    document.write(x + " " + naipes[naipeIndiceNumerico] + "<br>");
+                }
+            }
+
+        </script>
+    </body>
+</html>
