@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Extras</title>
+    </head>
+    <body>
+        
+        <input type="button" onClick="acessarUrl();" value="Acessar URL">
+        <script>
+            function acessarUrl()
+            {
+                location.href = "http://www.youtube.com/softbluecursos";
+            }
+        </script>
+        
+        <input type="button" onClick="acessarUrlEmNovaJanela();" value="Acessar URL em nova janela">
+        <script>
+            function acessarUrlEmNovaJanela()
+            {
+                open("http://www.youtube.com/softbluecursos");
+            }
+        </script>
+        
+        <img src="blue.png" id="corImagem">
+        <input type="button" onClick="trocarImagem();" value="Trocar imagem">
+        <script>
+            function trocarImagem()
+            {
+                var imagem = document.getElementById("corImagem");
+                imagem.src = "red.png";
+            }
+        </script>
+        
+        <script>
+            function minhaTarefa()
+            {
+                alert("Tarefa executada.");
+            }
+            
+            setTimeout(minhaTarefa, 5 * 1000);
+        </script>
+        
+    </body>
+</html>
